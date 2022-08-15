@@ -1,0 +1,79 @@
+@import "variables";
+
+.banner-home {
+    background-image: url(../../src/images/bannerHome.svg);
+    background-size: cover;
+    height: 100vh;
+    max-height: 1000px;
+    overflow: hidden;
+}
+
+.menu {
+    max-width: 1316px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu-logo img{
+        transition: ease-in-out 0.2s;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    
+    nav {
+        align-items: center;
+        width: 50%;
+        max-width: 400px;
+        display: flex;
+        justify-content: space-between;
+
+        .nav-link {
+            color: $colorWhite;
+            transition: ease-in-out 0.2s;
+
+            &:hover {
+                color: darken($color: $colorWhite, $amount: 40);
+            }
+        }
+    }
+}
+
+.banner-content {
+    color: $colorWhite;
+    max-width: 1316px;
+    max-height: 870px;
+    height: 100%;
+    height: -moz-available;
+    height: -webkit-fill-available;
+    height: fill-available;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .content-text {
+        margin-left: 20px;
+        width: 50%;
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 35px;
+        }
+    }
+
+    .content-image {
+        width: 45%;
+        display: flex;
+        flex: 0;
+    }
+}

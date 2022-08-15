@@ -1,0 +1,185 @@
+.banner-home {
+  background-image: url(../../src/images/bannerHome.svg);
+  background-size: cover;
+  height: 100vh;
+  max-height: 1000px;
+  overflow: hidden;
+}
+
+.menu {
+  max-width: 1316px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .menu-logo img {
+  transition: ease-in-out 0.2s;
+}
+.menu .menu-logo img:hover {
+  opacity: 0.8;
+}
+.menu nav {
+  align-items: center;
+  width: 50%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu nav .nav-link {
+  color: #FFFFFF;
+  transition: ease-in-out 0.2s;
+}
+.menu nav .nav-link:hover {
+  color: #999999;
+}
+
+.banner-content {
+  color: #FFFFFF;
+  max-width: 1316px;
+  max-height: 870px;
+  height: 100%;
+  height: -moz-available;
+  height: -webkit-fill-available;
+  height: fill-available;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-content .content-text {
+  margin-left: 20px;
+  width: 50%;
+}
+.banner-content .content-text h1 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+}
+.banner-content .content-text p {
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+.banner-content .content-image {
+  width: 45%;
+  display: flex;
+  flex: 0;
+}
+
+#mask {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+#mask.active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#dialog {
+  width: 80%;
+  max-width: 500px;
+  height: 80vh;
+  max-height: 600px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  display: none;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../../fonts/Poppins-Regular.otf) format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.btn {
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.3);
+  transition: ease-in-out 0.2s;
+  border-radius: 25px;
+  padding: 10px 25px;
+}
+
+.btn-padrao {
+  background-color: rgba(106, 106, 106, 0.3);
+  color: #FFFFFF;
+}
+.btn-padrao:hover {
+  background-color: rgba(55, 55, 55, 0.4);
+  color: #FFFFFF;
+}
+
+.btn-secondary {
+  background-color: #4caf50;
+  color: #FFFFFF;
+}
+.btn-secondary:hover {
+  background-color: #3d8b40;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=styles.css.map */

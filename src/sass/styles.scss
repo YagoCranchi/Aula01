@@ -1,0 +1,38 @@
+@import "./header";
+@import "./dialog";
+@import "./reset";
+@import "./fonts";
+
+
+.btn {
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.3);
+    transition: ease-in-out 0.2s;
+    border-radius: 25px;
+    padding: 10px 25px;
+}
+
+.btn-padrao {
+    background-color: rgba($color: #6a6a6a, $alpha: 0.3);
+    color: $colorWhite;
+
+    &:hover {
+        background-color: darken(
+            $color: rgba($color: #6a6a6a, $alpha: 0.4),
+            $amount: 20
+        );
+        color: $colorWhite;
+    }
+}
+
+.btn-secondary {
+    background-color: rgba($color: #4CAF50, $alpha: 1);
+    color: $colorWhite;
+
+    &:hover {
+        background-color: darken(
+            $color: rgba($color: #4CAF50, $alpha: 1),
+            $amount: 10
+        );
+        color: $colorWhite;
+    }
+}
